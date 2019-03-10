@@ -4,7 +4,9 @@ Rails.application.routes.draw do
       resources :users, only: [:index]
       resources :restaurants, only: [:index]
       resources :user_restaurants, only: [:index]
-
+      post '/login', to: 'auth#create'
+      post '/signup', to: 'users#create'
+      get '/profile', to: 'users#profile'
     end
   end
 end
