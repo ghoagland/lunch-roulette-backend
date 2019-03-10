@@ -27,10 +27,10 @@ ActiveRecord::Schema.define(version: 2019_03_09_225827) do
   end
 
   create_table "user_restaurants", force: :cascade do |t|
-    t.integer "num_visits"
+    t.integer "num_visits", default: 0
     t.datetime "last_visit"
-    t.boolean "is_favorite"
-    t.boolean "is_hidden"
+    t.boolean "is_favorite", default: false
+    t.boolean "is_hidden", default: false
     t.bigint "user_id"
     t.bigint "restaurant_id"
     t.datetime "created_at", null: false

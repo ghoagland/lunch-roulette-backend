@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+UserRestaurant.destroy_all
 User.destroy_all
 Restaurant.destroy_all
-UserRestaurant.destroy_all
 
 # FIXME: Update seeded users with auth
 user1 = User.create(
