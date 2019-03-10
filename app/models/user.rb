@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  validates :email, presence: true
-  validates :name, presence: true
+  has_secure_password
+  validates :email, presence: true, uniqueness: { case_sensitive: false }
   validates :password_digest, presence: true
 
   has_many :user_restaurants
