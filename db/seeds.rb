@@ -15,7 +15,7 @@ user1 = User.create(
   name: 'Gigi',
   email: 'gigi@gigi.gigi',
   default_location: '81 Prospect St, Brooklyn NY',
-  password_digest: 'test123'
+  password: '1234'
 )
 
 
@@ -23,7 +23,7 @@ user2 = User.create(
   name: 'Brandon',
   email: 'brandon@test.com',
   default_location: '420 W 21st St, New York, NY',
-  password_digest: 'test123'
+  password_digest: '1234'
 )
 
 
