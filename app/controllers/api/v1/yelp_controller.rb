@@ -15,7 +15,7 @@ class Api::V1::YelpController < ApplicationController
         location: location,
 
         #OPTIONS - defaults for now
-        radius: 1200, #1200m ~0.75mi
+        radius: 800, #800m ~0.5mi (1600 round-trip)
         limit: 50,
         price: '1, 2, 3'
       }
