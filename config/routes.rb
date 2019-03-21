@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       post '/login', to: 'auth#create'
       post '/signup', to: 'users#create'
       get '/profile', to: 'users#profile'
+      get '/search', to: 'yelp#search'
     end
   end
 end
