@@ -17,7 +17,8 @@ class Api::V1::YelpController < ApplicationController
         #OPTIONS - defaults for now
         radius: 800, #800m ~0.5mi (1600 round-trip)
         limit: 50,
-        price: '1, 2, 3'
+        price: '1, 2, 3',
+        open_now: true
       }
       response = HTTP.auth("Bearer #{ENV['YELP_API_KEY']}").get(url, params: params)
       businesses = response.parse["businesses"]
